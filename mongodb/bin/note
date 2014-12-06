@@ -1,0 +1,1 @@
+Install MongoDB and run mongod as mongod --dbpath <application directory / mongodb / bin / data / db
