@@ -245,6 +245,9 @@ th {
   .navbar {
     display: none;
   }
+  .signup {
+    display: none;
+  }
   .btn > .caret,
   .dropup > .btn > .caret {
     border-top-color: #000 !important;
