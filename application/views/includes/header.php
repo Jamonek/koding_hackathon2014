@@ -38,9 +38,21 @@
 					<li <?=($active_nav == 'contact') ? "class='active'":'';?>><a href="<?=base_url('contact');?>">Contact Us</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
+				<?php
+				// user logged in? display my work
+				// user logged out? display login/sign up
+				if($this->session->userdata('loggedin'))
+				{
+				?>
+					<li <?=($active_nav == 'my_work') ? "class='active'":'';?>><a href="<?=base_url('work');?>">My Work</a></li>
+				<?	
+				} else {
+				?>
+				<?
 					<li <?=($active_nav == 'signup') ? "class='active'":'';?>><a href="<?=base_url('signup');?>">Signup</a></li>
 					<li <?=($active_nav == 'login') ? "class='active'":'';?>><a href="<?=base_url('login');?>">Login</a></li>
-					<li <?=($active_nav == 'my_work') ? "class='active'":'';?>><a href="<?=base_url('work');?>">My Work</a></li>
+				}
+				?>
 				</ul>
 			</div>
 		</nav>
