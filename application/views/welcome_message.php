@@ -5,7 +5,9 @@
 				<h3 class="panel-title">Welcome</h3>
 			</div>
 			<div class="panel-body">
-				Welcome etc etc etc
+				Welcome to *insert site name*! This site was created for the 2014 Koding Virtual Hackathon but we hope to keep this going and make it better in the near future.
+				The point of this site is for coding colaberation. We are like the google docs for coders so please enjoy our demo!
+					-Team Goat Staff
 			</div>
 		</div>
 	</div>
@@ -15,7 +17,13 @@
 				<h3 class="panel-title">How to use</h3>
 			</div>
 			<div class="panel-body">
-				Howv to use blah blah blah
+				Howv to use:
+				<ol>
+					<li>Login-in</li>
+					<li>Start a project</li>
+					<li>Help a peer</li>
+					<li>Have fun learning</li>
+				</ol>
 			</div>
 		</div>
 	</div>	
