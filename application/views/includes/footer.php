@@ -7,7 +7,7 @@
     <script src="js/bootstrap.min.js"></script>
 	<div class="footer">
 		<div id="push"></div>
-        <p class="muted"><div style="color: white;">Team Goat | &copy 2014</div></p>
+        <p class="muted"><div style="color: white;"><center>Team Goat | &copy 2014</center></div></p>
         </div>
     </div>
   </body>
