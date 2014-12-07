@@ -11,8 +11,8 @@ class Login extends CI_Controller {
   
   public function push(){
     if($this->input->post()){
-      $email = $this->input->get('email');
-      $password = $this->input->get('password');
+      $email = $this->input->post('email');
+      $password = $this->input->post('password');
       
       $login = $this->users->login($email, $password);
       
