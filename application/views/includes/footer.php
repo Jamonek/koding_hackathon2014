@@ -7,5 +7,7 @@
 <br>
 <br>
 <footer>
+<center>
 	Team Goat | &copy 2014
+</center>
 </footer>
