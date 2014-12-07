@@ -48,9 +48,9 @@
 				<?	
 				} else {
 				?>
-				<?
 					<li <?=($active_nav == 'signup') ? "class='active'":'';?>><a href="<?=base_url('signup');?>">Signup</a></li>
 					<li <?=($active_nav == 'login') ? "class='active'":'';?>><a href="<?=base_url('login');?>">Login</a></li>
+				<?
 				}
 				?>
 				</ul>
