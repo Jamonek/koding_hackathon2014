@@ -5,6 +5,10 @@ body{
 a:link{
 	color: white;
 }
-a:link{
+a:visted{
 	color: purple;
+}
+panel panel-default{
+	background-color: black;
+	color: white;
 }
