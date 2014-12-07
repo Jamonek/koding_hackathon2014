@@ -4,3 +4,6 @@
     <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
+<footer>
+	Team Goat | &copy 2014
+</footer>
