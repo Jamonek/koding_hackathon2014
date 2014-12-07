@@ -17,7 +17,7 @@
 				<h3 class="panel-title">How to use</h3>
 			</div>
 			<div class="panel-body">
-				Howv to use:
+				How to use:
 				<ol>
 					<li>Login-in</li>
 					<li>Start a project</li>
