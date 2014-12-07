@@ -19,7 +19,7 @@
   </head>
   <body>
   <div class="container-fluid">
-  <div class="header"
+  <div class="header">
   <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
   
 	  	 <div class="navbar-header">
