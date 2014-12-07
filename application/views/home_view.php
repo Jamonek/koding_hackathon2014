@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+<!--link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/-->
 <div class="container col-sm-12 col-md-12">
 	<div class="btn-group-vertical col-sm-3 col-md-3" role="group">
 		<button id="chatBtn" type="button" class="btn btn-default" >ChatsWitGoats</button>

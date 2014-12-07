@@ -33,6 +33,7 @@
 			<li><a href="<?=base_url('contact');?>">Contact Us</a></li>
 			<li><a href="<?=base_url('signup');?>">Signup</a></li>
 			<li><a href="<?=base_url('login');?>">Login</a></li>
+      <li><a href="<?=base_url('home');?>">TestingBoopity</a></li>
   </div>
   </nav>
 
