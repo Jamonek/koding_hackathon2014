@@ -18,34 +18,32 @@
     <![endif]-->
   </head>
   <body>
-  <div class="container-fluid">
-  <div class="header">
-  <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
-  
-	  	 <div class="navbar-header">
-	  	 	 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-col">
-               <span class="sr-only">Toggle navigation</span>
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
-             </button>
-		  	 <a class="navbar-brand" href="#">
-			 <!-- image of logo -->
-			 </a>
-		</div>
+  	<div class="container-fluid">
+	  	<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+	  	 	<div class="navbar-header">
+	  	 		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-col">
+                	<span class="sr-only">Toggle navigation</span>
+                	<span class="icon-bar"></span>
+                	<span class="icon-bar"></span>
+                	<span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+	                <!-- image of logo -->
+	            </a>
+	        </div>
 		
-		<div class="collapse navbar-collapse" id="nav-col">
-			<ul class="nav navbar-nav navbar-left" >
-			<li <?=($active_nav == 'home') ? "class='active'":'';?>><a href="<?=base_url();?>">Home <span class="sr-only">(current)</span></a></li>
-			<li <?=($active_nav == 'about') ? "class='active'":'';?>><a href="<?=base_url('about');?>">About</a></li>
-			<li <?=($active_nav == 'contact') ? "class='active'":'';?>><a href="<?=base_url('contact');?>">Contact Us</a></li>
-			</ul>
-			<ul class="nav navbar-nav navbar-right">
-			<li <?=($active_nav == 'signup') ? "class='active'":'';?>><a href="<?=base_url('signup');?>">Signup</a></li>
-			<li <?=($active_nav == 'login') ? "class='active'":'';?>><a href="<?=base_url('login');?>">Login</a></li>
-			<li <?=($active_nav == 'my_work') ? "class='active'":'';?>><a href="<?=base_url('work');?>">My Work</a></li>
-		</div>
-  </nav>
-  </div>
+	        <div class="collapse navbar-collapse" id="nav-col">
+				<ul class="nav navbar-nav navbar-left" >
+					<li <?=($active_nav == 'home') ? "class='active'":'';?>><a href="<?=base_url();?>">Home <span class="sr-only">(current)</span></a></li>
+					<li <?=($active_nav == 'about') ? "class='active'":'';?>><a href="<?=base_url('about');?>">About</a></li>
+					<li <?=($active_nav == 'contact') ? "class='active'":'';?>><a href="<?=base_url('contact');?>">Contact Us</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li <?=($active_nav == 'signup') ? "class='active'":'';?>><a href="<?=base_url('signup');?>">Signup</a></li>
+					<li <?=($active_nav == 'login') ? "class='active'":'';?>><a href="<?=base_url('login');?>">Login</a></li>
+					<li <?=($active_nav == 'my_work') ? "class='active'":'';?>><a href="<?=base_url('work');?>">My Work</a></li>
+				</ul>
+			</div>
+		</nav>
 
 
