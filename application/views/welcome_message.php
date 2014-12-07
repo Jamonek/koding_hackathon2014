@@ -1,3 +1,10 @@
+<style type='text/css'>
+.btn-spacing
+{
+padding: 8px;
+}
+</style>
+
 <div class="container">
 	
 		<div class="panel panel-default">
@@ -28,7 +35,7 @@
 		</div>
 	
 	
-		<div class="col-md-6 col-md-offset-3">
+		<div class="col-md-6 col-md-offset-3 btn-spacing">
 			<a href="/login" class="btn btn-info btn-lg">Login</a>
 			<a href="/signup" class="btn btn-info btn-lg">Sign Up</a>
 			<a href="#" class="btn btn-info btn-lg">Guest User</a>
