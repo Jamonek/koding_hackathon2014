@@ -21,12 +21,18 @@
   <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
   	 <div class="container-fluid">
 	  	 <div class="navbar-header">
+	  	 	 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-col">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+             </button>
 		  	 <a class="navbar-brand" href="#">
 			 <!-- image of logo -->
 			 </a>
 		</div>
 		
-		<div class="collapse navbar-collapse" id="collapse-1">
+		<div class="collapse navbar-collapse" id="nav-col">
 			<ul class="nav navbar-nav navbar-left" >
 			<li class="active"><a href="<?=base_url();?>">Home <span class="sr-only">(current)</span></a></li>
 			<li><a href="<?=base_url('about');?>">About</a></li>
