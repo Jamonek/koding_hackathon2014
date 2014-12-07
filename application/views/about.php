@@ -7,6 +7,6 @@
 	*insert site name* was created by coders for coders so we tried to tie in things that we all love such as chat boxes, 
 	usernames (so you can be whoever you want), and of course the feature of simultanious coding.
 	We hope you enjoy the product and look forward to hearing your feedback.
-	<br>
+	<br><br>
 	~Team Goat Staff
 </div>
