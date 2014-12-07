@@ -12,7 +12,7 @@ margin: 14px;
 				<h3 class="panel-title">Welcome</h3>
 			</div>
 			<div class="panel-body">
-				Welcome to *insert site name*! This site was created for the 2014 Koding Virtual Hackathon but we hope to keep this going and make it better in the near future.
+				Welcome to Code Collaboration, better known as CoCo! This site was created for the 2014 Koding Virtual Hackathon but we hope to keep this going and make it better in the near future.
 				The point of this site is for coding colaberation. We are like the google docs for coders so please enjoy our demo!
 				<br>	-Team Goat Staff
 			</div>
