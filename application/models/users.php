@@ -17,7 +17,7 @@ class Users extends CI_Model {
     	$password_check = empty($password) ? true : false;
     	
     	// if all good, continue
-    	if($username_check && $email_check && $password_check)
+    	if(!$username_check && !$email_check && !$password_check)
     	{
 	    	
 	    	// check if username/email already exist

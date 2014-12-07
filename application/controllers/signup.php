@@ -18,8 +18,8 @@ class Signup extends CI_Controller {
 		{
 			print_r($_POST);
 			$email = $this->input->post('email');
-			$password = $this->input->post('password');
 			$username = $this->input->post('name');
+			$password = $this->input->post('password');
 			
 			// pass data to user model to do heavy lifting
 			$register = $this->users->register($username, $email, $password);
