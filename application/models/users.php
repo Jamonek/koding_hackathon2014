@@ -66,7 +66,7 @@ class Users extends CI_Model {
     	if(!$email_check && !$password_check)
     	{
 	    	// check if email does not exist
-	    	if(!$this->email_exist($username))
+	    	if(!$this->email_exist($email))
 	    		return array('status' => false, 'message' => 'Email does not exist');
 	    	
 	    	// hash password
