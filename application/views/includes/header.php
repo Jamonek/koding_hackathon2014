@@ -27,12 +27,12 @@
 		</div>
 		
 		<div class="collapse navbar-collapse" id="collapse-1">
-			<ul class="nav navbar-nav" align="pull-left">
+			<ul class="nav navbar-nav navbar-left" >
 			<li class="active"><a href="<?=base_url();?>">Home <span class="sr-only">(current)</span></a></li>
 			<li><a href="<?=base_url('about');?>">About</a></li>
 			<li><a href="<?=base_url('contact');?>">Contact Us</a></li>
 			</ul>
-			<ul class="nav signup-nav" align="pull-right">
+			<ul class="nav navbar-nav navbar-right">
 			<li><a href="<?=base_url('signup');?>">Signup</a></li>
 			<li><a href="<?=base_url('login');?>">Login</a></li>
       <li><a href="<?=base_url('home');?>">TestingBoopity</a></li>
