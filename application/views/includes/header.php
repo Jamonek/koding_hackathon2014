@@ -28,9 +28,9 @@
 		<div class="collapse navbar-collapse" id="collapse-1">
 			<ul class="nav navbar-nav">
 			<li class="active"><a href="/">Home <span class="sr-only">(current)</span></a></li>
-			<li><a href="/signup">Signup</a></li>
-			<li><a href="/login">Login</a></li>
-			<li><a href="/about">About</a></li>
+			<li><a href="<?=base_url('signup');?>">Signup</a></li>
+			<li><a href="<?=base_url('login');?>">Login</a></li>
+			<li><a href="<?=base_url('about');?>">About</a></li>
   </div>
   </nav>
 
