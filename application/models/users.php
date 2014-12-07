@@ -86,7 +86,8 @@ class Users extends CI_Model {
 		    	if($this->get_info_from_email($email) != false)
 		    	{
 	    			$do = $this->get_info_from_email($email);
-	    			$this->session->set_userdata('user_id', $do['username']);
+	    			print_r($do);
+	    			$this->session->set_userdata('user_id', $do['u_id']);
 	    		}
 	    		return array('status' => true, 'message' => 'User logged in');
 	    	} else {
