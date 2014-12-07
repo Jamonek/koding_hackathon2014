@@ -1,4 +1,4 @@
-<div class="container">
+<div class="well">
   <!-- Contact Form -->
   <form action="" method="GET" role="form"> <!--Dont know what acton to use -->
     <div class="form-group">

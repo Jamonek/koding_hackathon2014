@@ -1,4 +1,5 @@
 	<!-- About Page -->
+	<div class="well">
 	Hello world!<br><br>
 	We are the up and coming Team Goat. We are a team of young adults participating in the 2014 Koding Virtual Hack.
 	This site came up as an idea of making our lives easier. What if we could have made this whole site at the same time?
@@ -8,4 +9,4 @@
 	We hope you enjoy the product and look forward to hearing your feedback.
 	<br><br>
 	&nbsp &nbsp &nbsp &nbsp &nbsp ~Team Goat Staff
-
+	</div>

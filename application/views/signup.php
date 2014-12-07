@@ -1,4 +1,4 @@
-<div class="container">
+<div class="well">
 	<!-- Sign up Form -->
 	<form action="/signup/push" method="POST" role="form">
 		<div class="form-group">

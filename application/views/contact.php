@@ -1,4 +1,4 @@
-<div class="container">
+<div class="well">
 	<!-- Contact Form -->
 	<form action="<?=base_url();?>contact/push" method="POST" role="form"> <!--Dont know what acton to use -->
 		<div class="form-group">
