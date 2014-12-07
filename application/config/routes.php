@@ -39,6 +39,7 @@
 */
 
 $route['signup/push'] = "signup/push";
+$route['login/push'] = "login/push";
 
 $route['default_controller'] = "welcome";
 $route['404_override'] = '';

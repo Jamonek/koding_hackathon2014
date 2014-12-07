@@ -88,8 +88,7 @@ class Users extends CI_Model {
 	    			$do = $this->get_info_from_email($email);
 	    			$this->session->set_userdata('user_id', $do->username);
 	    		}
-	    		redirect('work');
-	    		exit;
+	    		return array('status' => true, 'message' => 'User logged in');
 	    	} else {
 		    	return array('status' => false, 'message' => 'Email/password does not exist');
 	    	}

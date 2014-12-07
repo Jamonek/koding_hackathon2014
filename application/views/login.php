@@ -1,9 +1,9 @@
 <div class="well">
   <!-- Contact Form -->
-  <form action="" method="GET" role="form"> <!--Dont know what acton to use -->
+  <form action="<?=base_url();?>login/push" method="POST" role="form"> <!--Dont know what acton to use -->
     <div class="form-group">
-      <label for="username">Username</label>
-      <input type="text" class="form-control" id="username" name="name" placeholder="Goat1">
+      <label for="email">Email</label>
+      <input type="text" class="form-control" id="email" name="email" placeholder="john@college.edu">
     </div>
     <div class="form-group">
       <label for="accountPass">Password</label>
