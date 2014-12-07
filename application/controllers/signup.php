@@ -16,6 +16,7 @@ class Signup extends CI_Controller {
 	{
 		if($this->input->post())
 		{
+			print_r($_POST);
 			$email = $this->input->post('email');
 			$password = $this->input->post('password');
 			$username = $this->input->post('name');
