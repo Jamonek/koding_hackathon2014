@@ -1,6 +1,6 @@
 <div class="well">
 	<!-- Sign up Form -->
-	<form action="/signup/push" method="POST" role="form">
+	<form action="<?=base_url();?>signup/push" method="POST" role="form">
 		<div class="form-group">
 			<label for="username">Username</label>
 			<input type="text" class="form-control" id="username" name="name" placeholder="Goat1">
