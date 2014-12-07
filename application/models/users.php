@@ -26,6 +26,10 @@ class Users extends CI_Model {
 	    		
 	    	if($this->email_exist($email))
 	    		return array('status' => false, 'message' => 'Email exists');
+	    	
+	    	// is this school allowed to sign up?
+	    	if(!$this->checkSchoolAllowed($email))
+	    		return array('status' => false, 'message' => 'School not allowed');
 	    		
 	    	// hash password
 	    	$hashed_password = $this->hash($password);
@@ -55,6 +59,28 @@ class Users extends CI_Model {
     function login($email, $password)
     {
 	    
+    }
+    
+    function checkSchoolAllowed($email)
+    {
+	    $split = explode('@', $email);
+	    
+	    // $split[1] contains host
+	    
+	    // clean before contacting database
+	    $clean_host = $this->db->escape($split[1]);
+	    
+	    $query = 'SELECT `id` FROM `schools` WHERE `school_email` = '.$clean_host;
+	    
+	    $do = $this->db->query($query);
+	    
+	    if($do->num_rows() > 0)
+	    {
+	    	// true if the school exists
+		    return true;
+	    } else {
+		    return false;
+	    }
     }
     
     function loggedIn()

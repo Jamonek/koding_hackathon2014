@@ -18,10 +18,18 @@ class Signup extends CI_Controller {
 		{
 			$email = $this->input->post('email');
 			$password = $this->input->post('password');
+			$username = $this->input->post('username');
 			
-			// check if user exist
-			
-			// 
+			// pass data to user model to do heavy lifting
+			$register = $this->users->register($username, $email, $password);
+			if($register['status'])
+			{
+				// registration successful, redirect user to work page
+				redirect('work?reg=1');
+				exit;
+			} else {
+				// display form with errors
+			}
 		}
 	}
 }
