@@ -6,7 +6,7 @@
 		<button id="watBtn" type="button" class="btn btn-default" >Cheese</button>
 	</div>
 	<div class="col-sm-9 col-md-9">
-		<textarea id="box" rows="4" cols="50" placeholder="booty butts"></textarea>
+		<textarea id="box" rows="4" cols="50" placeholder="booty butts" style="color: black;" ></textarea>
 </div>
 
 	<script type="text/javascript">
