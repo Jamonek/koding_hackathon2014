@@ -4,6 +4,9 @@ class Signup extends CI_Controller {
 
 	public function index()
 	{
+  		if($this->users->loggedIn())
+  			redirect('work');
+  		
 		$data['site_sub_page'] = 'Sign Up';
 		$data['active_nav'] = 'signup';
 		$this->load->view('includes/header', $data);
@@ -14,6 +17,9 @@ class Signup extends CI_Controller {
 	
 	public function push()
 	{
+		if($this->users->loggedIn())
+  			redirect('work');
+  		
 		if($this->input->post())
 		{
 			$email = $this->input->post('email');
