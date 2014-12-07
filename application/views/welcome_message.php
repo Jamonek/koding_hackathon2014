@@ -4,8 +4,6 @@
 margin: 14px;
 }
 </style>
-
-<div class="container">
 	
 		<div class="panel panel-default">
 			<div class="panel-heading">
@@ -43,4 +41,4 @@ margin: 14px;
 		</center>
 		</div>
 	
-</div>
+
