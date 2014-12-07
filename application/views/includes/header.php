@@ -18,7 +18,7 @@
     <![endif]-->
   </head>
   <body>
-  <nav class="navbar navbar-inverse" role="navigation">
+  <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
   	 <div class="container-fluid">
 	  	 <div class="navbar-header">
 		  	 <a class="navbar-brand" href="#">
