@@ -40,7 +40,7 @@ class Users extends CI_Model {
 	    	$clean_password = $this->db->escape($password);
 	    	
 	    	// prepare to insert
-	    	$query = 'INSERT INTO `users` (`username`, `email`, `password`, `create_login`) VALUES("'.$clean_username.'", "'.$clean_email.'", "'.$clean_password.'", "'.time().'")';
+	    	$query = 'INSERT INTO `users` (`username`, `email`, `password`, `create_login`) VALUES('.$clean_username.', '.$clean_email.', '.$clean_password.', "'.time().'")';
 	    	
 	    	$register_query = $this->db->query($query);
 	    	if($register_query)
