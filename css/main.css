@@ -8,6 +8,6 @@ a:link{
 a:visted{
 	color: purple;
 }
-panel panel-default{
+.panel-default{
 	color: black;
 }
