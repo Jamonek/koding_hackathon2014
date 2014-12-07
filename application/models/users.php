@@ -52,6 +52,8 @@ class Users extends CI_Model {
 	    	} else {
 		    	return array('status' => false, 'message' => 'Database error');
 	    	}
+    	} else {
+	    	return array('status' => false, 'message' => 'Input missing');
     	}
 	    
     }
