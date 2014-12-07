@@ -35,7 +35,7 @@
 			<ul class="nav navbar-nav navbar-right">
 			<li><a href="<?=base_url('signup');?>">Signup</a></li>
 			<li><a href="<?=base_url('login');?>">Login</a></li>
-      <li><a href="<?=base_url('home');?>">TestingBoopity</a></li>
+      <li><a href="<?=base_url('me');?>">TestingBoopity</a></li>
   </div>
   </nav>
 
