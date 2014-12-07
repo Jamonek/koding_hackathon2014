@@ -6,11 +6,15 @@ class Contact extends CI_Controller {
     $this->load->view('includes/footer');
   }
   public function send(){
-    if($this->input->post()){
-      $email = $this->input->post('email'); 
-      $message = $this->input->post('msg');
-      // send email to team account
-      //
-    }
+    function send(){
+		$this->load->library('form_validation');
+    $this->form_validation->set_rules('email', 'Email', 'required');
+    $this->form_validation->set_rules('msg', 'Message', 'required');
+		if ($this->form_validation->run() == FALSE){
+			$this->load->view('contact.php');
+		}else{
+			$this->load->view('success.php');
+		}
+	}
   }
 }
