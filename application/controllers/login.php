@@ -22,7 +22,7 @@ class Login extends CI_Controller {
 	      redirect('work');
 	      exit;
       } else {
-	      // display errors
+	      print_r($login);
       }
     }
   }
