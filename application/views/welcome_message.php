@@ -21,9 +21,9 @@
 	</div>	
 	<div class="row">
 		<div class="col-md-6 col-md-offset-3">
-			<button type="button" class="btn btn-success btn-lg">Login</button>
-			<button type="button" class="btn btn-success btn-lg">Sign Up</button>
-			<button type="button" class="btn btn-success btn-lg">Guest User</button>
+			<a href="/login" class="btn btn-info btn-lg">Login</a>
+			<a href="/signup" class="btn btn-info btn-lg">Sign Up</a>
+			<a href="#" class="btn btn-info btn-lg">Guest User</a>
 		</div>
 	</div>
 </div>

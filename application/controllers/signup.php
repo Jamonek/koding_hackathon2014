@@ -10,4 +10,17 @@ class Signup extends CI_Controller {
 		$this->load->view('includes/footer');
 		
 	}
+	
+	public function push()
+	{
+		if($this->input->post())
+		{
+			$email = $this->input->post('email');
+			$password = $this->input->post('password');
+			
+			// check if user exist
+			
+			// 
+		}
+	}
 }

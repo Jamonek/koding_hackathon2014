@@ -17,5 +17,21 @@
     <![endif]-->
   </head>
   <body>
+  <nav class="navbar navbar-inverse" role="navigation">
+  	 <div class="container-fluid">
+	  	 <div class="navbar-header">
+		  	 <a class="navbar-brand" href="#">
+			 <!-- image of logo -->
+			 </a>
+		</div>
+		
+		<div class="collapse navbar-collapse" id="collapse-1">
+			<ul class="nav navbar-nav">
+			<li class="active"><a href="/">Home <span class="sr-only">(current)</span></a></li>
+			<li><a href="/signup">Signup</a></li>
+			<li><a href="/login">Login</a></li>
+			<li><a href="/about">About</a></li>
+  </div>
+  </nav>
 
 
