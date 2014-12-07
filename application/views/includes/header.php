@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CoCo-Code Collaboration</title>
+    <title>CoCo-Code Collaboration &rsaquo; <?=$site_sub_page;?></title>
 
     <!-- Bootstrap -->
     <link href="<?=base_url();?>css/bootstrap.min.css" rel="stylesheet">
@@ -34,14 +34,14 @@
 		
 		<div class="collapse navbar-collapse" id="nav-col">
 			<ul class="nav navbar-nav navbar-left" >
-			<li class="active"><a href="<?=base_url();?>">Home <span class="sr-only">(current)</span></a></li>
-			<li><a href="<?=base_url('about');?>">About</a></li>
-			<li><a href="<?=base_url('contact');?>">Contact Us</a></li>
+			<li <?=($active_nav == 'home') ? "class='active'":'';?>><a href="<?=base_url();?>">Home <span class="sr-only">(current)</span></a></li>
+			<li <?=($active_nav == 'about') ? "class='active'":'';?>><a href="<?=base_url('about');?>">About</a></li>
+			<li <?=($active_nav == 'contact') ? "class='active'":'';?>><a href="<?=base_url('contact');?>">Contact Us</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
-			<li><a href="<?=base_url('signup');?>">Signup</a></li>
-			<li><a href="<?=base_url('login');?>">Login</a></li>
-      <li><a href="<?=base_url('work');?>">My Work</a></li>
+			<li <?=($active_nav == 'signup') ? "class='active'":'';?>><a href="<?=base_url('signup');?>">Signup</a></li>
+			<li <?=($active_nav == 'login') ? "class='active'":'';?>><a href="<?=base_url('login');?>">Login</a></li>
+			<li <?=($active_nav == 'my_work') ? "class='active'":'';?>><a href="<?=base_url('work');?>">My Work</a></li>
   </div>
   </nav>
 

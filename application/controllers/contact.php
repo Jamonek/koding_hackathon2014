@@ -4,8 +4,9 @@ class Contact extends CI_Controller {
   
   public function index()
   {
-   
-    $this->load->view('includes/header');
+   	$data['site_sub_page'] = 'Contact';
+   	$data['active_nav'] = 'contact';
+    $this->load->view('includes/header', $data);
     $this->load->view('contact');
     $this->load->view('includes/footer');
   

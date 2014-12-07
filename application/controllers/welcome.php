@@ -19,7 +19,9 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('includes/header');
+		$data['site_sub_page'] = 'Home';
+		$data['active_nav'] = 'home';
+		$this->load->view('includes/header', $data);
 		$this->load->view('welcome_message');
 		$this->load->view('includes/footer');
 	}

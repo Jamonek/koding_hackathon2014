@@ -4,7 +4,8 @@ class Signup extends CI_Controller {
 
 	public function index()
 	{
-	
+		$data['site_sub_page'] = 'Sign Up';
+		$data['active_nav'] = 'signup';
 		$this->load->view('includes/header');
 		$this->load->view('signup.php');
 		$this->load->view('includes/footer');
