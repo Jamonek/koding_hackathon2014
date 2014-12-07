@@ -8,7 +8,7 @@
 
     <!-- Bootstrap -->
     <link href="<?=base_url();?>css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="<?=base_url();?>css/main.css">
+    <link href="<?=base_url();?>css/main.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -18,8 +18,10 @@
     <![endif]-->
   </head>
   <body>
+  <div class="container-fluid">
+  <div class="header"
   <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
-  	 <div class="container-fluid">
+  
 	  	 <div class="navbar-header">
 	  	 	 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-col">
                <span class="sr-only">Toggle navigation</span>
@@ -42,7 +44,8 @@
 			<li <?=($active_nav == 'signup') ? "class='active'":'';?>><a href="<?=base_url('signup');?>">Signup</a></li>
 			<li <?=($active_nav == 'login') ? "class='active'":'';?>><a href="<?=base_url('login');?>">Login</a></li>
 			<li <?=($active_nav == 'my_work') ? "class='active'":'';?>><a href="<?=base_url('work');?>">My Work</a></li>
-  </div>
+		</div>
   </nav>
+  </div>
 
 
