@@ -1,7 +1,7 @@
 <style type='text/css'>
 .btn-spacing
 {
-margin: 8px;
+margin: 14px;
 }
 </style>
 
