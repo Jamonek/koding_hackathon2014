@@ -1,20 +1,60 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-class Contact extends CI_Controller {
-  public function index(){
+
+public class Contact extends CI_Controller {
+  
+  public function index()
+  {
+   
     $this->load->view('includes/header');
-    $this->load->view('contact.php');
+    $this->load->view('contact');
     $this->load->view('includes/footer');
+  
   }
-  public function send(){
-    function send(){
-		$this->load->library('form_validation');
-    $this->form_validation->set_rules('email', 'Email', 'required');
-    $this->form_validation->set_rules('msg', 'Message', 'required');
-		if ($this->form_validation->run() == FALSE){
-			$this->load->view('contact.php');
-		}else{
-			$this->load->view('success.php');
-		}
-	}
+  
+  public function push()
+  {
+	  if($this->input->post('submit'))
+	  {
+	  	  // Check if our email and msg input contain data
+		  $email = empty($this->input->post('email')) ? false : $this->input->post('email');
+		  $msg = empty($this->input->post('msg')) ? false : $this->input->post('msg'); 
+		  
+		  $data['email_error'] = false;
+		  $data['msg_error'] = false;
+		  
+		  // no check yet on email validation.. will add later
+		  
+		  if(!$email || !$msg)
+		  {
+			  // one of the fields failed..
+			  if($email == false)
+			  	$data['email_error'] = true;
+			  	
+			  if($msg == false)
+			  	$data['msg_error'] = true;
+			  	
+			  
+			  // redirect to contact with errors
+			  if(!$email && !$msg)
+			  	redirect('contact?error=1');
+			  elseif(!$email && $msg != false)
+			  	redirect('contact?error=2');
+			  elseif($email != false && !$msg)
+			  	redirect('contact?error=3');
+			  	
+		  } else {
+			  // insert information into the database after sanitization
+			  $query = "INSERT INTO `contact` (`email`, `message`) VALUES('".$this->db->escape($email)."', '".$this->db->escape($msg)."')";
+			  
+			  if($this->db->query($query))
+			  {
+				  $this->load->view('includes/header');
+				  $this->load->view('success');
+				  $this->load->view('includes/footer');
+			  }
+			  
+			  
+		  }
+	  }
   }
 }
