@@ -23,6 +23,7 @@ class Login extends CI_Controller {
 	      exit;
       } else {
 	      print_r($login);
+	      print_r($_POST);
       }
     }
   }
