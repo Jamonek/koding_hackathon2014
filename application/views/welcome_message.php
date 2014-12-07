@@ -35,10 +35,10 @@ padding: 8px;
 		</div>
 	
 	
-		<div class="col-md-6 col-md-offset-3 btn-spacing">
-			<a href="/login" class="btn btn-info btn-lg">Login</a>
-			<a href="/signup" class="btn btn-info btn-lg">Sign Up</a>
-			<a href="#" class="btn btn-info btn-lg">Guest User</a>
+		<div class="col-md-6 col-md-offset-3">
+			<a href="/login" class="btn btn-info btn-lg btn-spacing">Login</a>
+			<a href="/signup" class="btn btn-info btn-lg btn-spacing">Sign Up</a>
+			<a href="#" class="btn btn-info btn-lg btn-spacing">Guest User</a>
 		</div>
 	
 </div>
