@@ -3,7 +3,7 @@
 	<form action="/signup/push" method="POST" role="form">
 		<div class="form-group">
 			<label for="username">Username</label>
-			<input type="txt" class="form-control" id="username" name="name" placeholder="Goat1">
+			<input type="text" class="form-control" id="username" name="name" placeholder="Goat1">
 		</div>
 		<div class="form-group">
 			<label for="collegeEmail">College Email</label>
