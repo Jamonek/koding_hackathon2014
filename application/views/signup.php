@@ -2,6 +2,10 @@
 	<!-- Sign up Form -->
 	<form action="/signup/push" method="POST" role="form">
 		<div class="form-group">
+			<label for="username">Username</label>
+			<input type="txt" class="form-control" id="username" name="name" placeholder="Goat1">
+		</div>
+		<div class="form-group">
 			<label for="collegeEmail">College Email</label>
 			<input type="email" class="form-control" id="collegeEmail" name="email" placeholder="john@college.edu">
 		</div>
@@ -11,5 +15,6 @@
 		</div>
 		<div class="form-group">
 			<input type="submit" class="form-control btn btn-info btn-lg" name="submit" value="Sign Up">
+		</div>
 	</form>
 </div>
