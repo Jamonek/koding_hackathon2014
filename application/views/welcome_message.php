@@ -35,8 +35,8 @@ margin: 14px;
 	
 		<div class="col-md-6 col-md-offset-3">
 		<center>
-			<a href="/login" class="btn btn-info btn-lg btn-spacing">Login</a>
-			<a href="/signup" class="btn btn-info btn-lg btn-spacing">Sign Up</a>
+			<a href="<?=base_url();?>login" class="btn btn-info btn-lg btn-spacing">Login</a>
+			<a href="<?=base_url();?>signup" class="btn btn-info btn-lg btn-spacing">Sign Up</a>
 			<a href="#" class="btn btn-info btn-lg btn-spacing">Guest User</a>
 		</center>
 		</div>
