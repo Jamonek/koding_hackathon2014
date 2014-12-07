@@ -1,6 +1,6 @@
 <div class="container">
 	<!-- Contact Form -->
-	<form action="" method="POST" role="form"> <!--Dont know what acton to use -->
+	<form action="" method="GET" role="form"> <!--Dont know what acton to use -->
 		<div class="form-group">
 			<label for="email">Email</label>
 			<input type="email" class="form-control" id="email" name="email" placeholder="john@domain.com">
