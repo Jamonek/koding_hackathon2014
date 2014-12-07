@@ -1,5 +1,11 @@
 <div class="well">
 	<!-- Sign up Form -->
+	<?
+	if(isset($status))
+	{
+		echo '<strong>'.$message.'</strong><br /><br />';
+	}
+	?>
 	<form action="<?=base_url();?>signup/push" method="POST" role="form">
 		<div class="form-group">
 			<label for="username">Username</label>

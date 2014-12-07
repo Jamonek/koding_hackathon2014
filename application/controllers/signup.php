@@ -7,7 +7,7 @@ class Signup extends CI_Controller {
 		$data['site_sub_page'] = 'Sign Up';
 		$data['active_nav'] = 'signup';
 		$this->load->view('includes/header', $data);
-		$this->load->view('signup.php');
+		$this->load->view('signup');
 		$this->load->view('includes/footer');
 		
 	}
@@ -29,6 +29,12 @@ class Signup extends CI_Controller {
 				exit;
 			} else {
 				// display form with errors
+				$data['site_sub_page'] = 'Sign Up';
+				$data['active_nav'] = 'signup';
+				$this->load->view('includes/header', $data);
+				$this->load->view('signup', $register);
+				$this->load->view('includes/footer');
+				
 			}
 		}
 	}
