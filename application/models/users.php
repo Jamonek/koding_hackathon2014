@@ -77,7 +77,7 @@ class Users extends CI_Model {
 	    	$clean_password = $this->db->escape($hashed_password);
 	    	
 	    	// Query database.. if row returned, email/password are correct
-	    	$query = $this->db->query('SELECT `id` FROM `users` WHERE `email` = '.$clean_email.' AND `password` = '.$clean_password);
+	    	$query = $this->db->query('SELECT `u_id` FROM `users` WHERE `email` = '.$clean_email.' AND `password` = '.$clean_password);
 	    	
 	    	if($query->num_rows() > 0)
 	    	{
