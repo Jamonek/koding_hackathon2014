@@ -7,7 +7,8 @@
 		</div>
 		<div class="form-group">
 			<label for="msg">Message</label>
-			<input type="text" class="form-control" id="msg" name="msg">
+			<textarea class="form-control" name="msg" id="msg"></textarea>
+			
 		</div>
 		<div class="form-group">
 			<input type="submit" class="form-control btn btn-info btn-lg" name="submit" value="Send">
