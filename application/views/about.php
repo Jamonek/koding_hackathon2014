@@ -8,5 +8,5 @@
 	usernames (so you can be whoever you want), and of course the feature of simultanious coding.
 	We hope you enjoy the product and look forward to hearing your feedback.
 	<br><br>
-	&nbsp ~Team Goat Staff
+	&nbsp &nbsp &nbsp &nbsp &nbsp ~Team Goat Staff
 </div>
