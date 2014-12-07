@@ -9,5 +9,7 @@
 			<label for="accountPass">Password</label>
 			<input type="password" class="form-control" id="accountPass" name="password" placeholder="&bullet;&bullet;&bullet;&bullet;&bullet;&bullet;">
 		</div>
+		<div class="form-group">
+			<input type="submit" class="form-control btn btn-info btn-lg" name="submit" value="Sign Up">
 	</form>
 </div>
