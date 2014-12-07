@@ -37,7 +37,7 @@ class Users extends CI_Model {
 	    	// escape data
 	    	$clean_email = $this->db->escape($email);
 	    	$clean_username = $this->db->escape($username);
-	    	$clean_password = $this->db->escape($password);
+	    	$clean_password = $this->db->escape($hashed_password);
 	    	
 	    	// prepare to insert
 	    	$query = 'INSERT INTO `users` (`username`, `email`, `password`, `create_login`) VALUES('.$clean_username.', '.$clean_email.', '.$clean_password.', "'.time().'")';
