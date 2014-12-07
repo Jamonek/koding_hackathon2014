@@ -45,6 +45,6 @@
 			</div>
 		</nav>
 		
-		<div class="wrap container">
+		<div class="container">
 
 
