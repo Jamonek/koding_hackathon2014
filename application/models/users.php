@@ -60,7 +60,59 @@ class Users extends CI_Model {
     
     function login($email, $password)
     {
+    	$email_check = empty($email) ? true : false;
+    	$password_check = empty($password) ? true : false;
+    	
+    	if(!$email_check && !$password_check)
+    	{
+	    	// check if email does not exist
+	    	if(!$this->email_exist($username))
+	    		return array('status' => false, 'message' => 'Email does not exist');
+	    	
+	    	// hash password
+	    	$hashed_password = $this->hash($password);
+	    	
+	    	// sanitize
+	    	$clean_email = $this->db->escape($email);
+	    	$clean_password = $this->db->escape($hashed_password);
+	    	
+	    	// Query database.. if row returned, email/password are correct
+	    	$query = $this->db->query('SELECT `id` FROM `users` WHERE `email` = '.$clean_email.' AND `password` = '.$clean_password);
+	    	
+	    	if($query->num_rows() > 0)
+	    	{
+		    	// save session information..
+		    	$this->session->set_userdata('loggedin', true);
+		    	if($this->get_info_from_email($email) != false)
+		    	{
+	    			$do = $this->get_info_from_email($email);
+	    			$this->session->set_userdata('user_id', $do->username);
+	    		}
+	    		redirect('work');
+	    		exit;
+	    	} else {
+		    	return array('status' => false, 'message' => 'Email/password does not exist');
+	    	}
+    	} else {
+	    	return array('status' => false, 'message' => 'Input missing');
+    	}
 	    
+    }
+    
+    function get_info_from_email($email)
+    {
+	    // clean input
+	    $clean_email = $this->db->escape($email);
+	    
+	    // query
+	    $query = $this->db->query('SELECT * FROM `users` WHERE `email` = '. $clean_email);
+	    
+	    if($query->num_rows() > 0)
+	    {
+		    return $query->result();
+	    } else {
+		    return false;
+	    }
     }
     
     function checkSchoolAllowed($email)
@@ -108,6 +160,7 @@ class Users extends CI_Model {
 	    
 	    if($do->num_rows() > 0)
 	    {
+	    	// return true if username does exist
 		    return true;
 	    } else {
 		    return false;
