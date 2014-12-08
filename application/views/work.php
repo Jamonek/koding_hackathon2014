@@ -59,33 +59,24 @@
   ms.style.display = "none";
   lo.style.display = "none";
 
-  var clear = function(btn){
+  var clear = function(btn, div){
 
     code.className = chat.className = msg.className = log.className = "";
     co.style.display = ch.style.display = ms.style.display = lo.style.display = "none";
     btn.className = "active";
-    switch(btn.id){
-      case 'code':
-        co.style.display = "inline";
-        break;
-      case 'chat':
-        break;
-      case 'msg':
-        break;
-      case 'log':
-        break;
+    div.style.display = "inherit";
     }
   };
   code.addEventListener("click", function(e){
-    clear(code);
+    clear(code, co);
   });
   chat.addEventListener("click", function(e){
-    clear(chat);
+    clear(chat, ch);
   });
   msg.addEventListener("click", function(e){
-    clear(msg);
+    clear(msg, ms);
   });
   log.addEventListener("click", function(e){
-    clear(log);
+    clear(log, lo);
   });
 </script>
