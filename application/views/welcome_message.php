@@ -38,7 +38,7 @@ margin: 14px;
 		<center>
 			<a href="<?=base_url();?>login" class="btn btn-info btn-lg btn-spacing">Login</a>
 			<a href="<?=base_url();?>signup" class="btn btn-info btn-lg btn-spacing">Sign Up</a>
-			<a href="#" class="btn btn-info btn-lg btn-spacing">Guest User</a>
+			<a href="<?=base_url();?>work" class="btn btn-info btn-lg btn-spacing">Guest User</a>
 		</center>
 		</div>
 	
