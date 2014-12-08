@@ -28,8 +28,12 @@ class Login extends CI_Controller {
 	      redirect('work');
 	      exit;
       } else {
-	      print_r($login);
-	      print_r($_POST);
+	      // display form with errors
+	     $data['site_sub_page'] = 'Sign Up';
+	     $data['active_nav'] = 'signup';
+	     $this->load->view('includes/header', $data);
+	     $this->load->view('signup', $register);
+	     $this->load->view('includes/footer');
       }
     }
   }
