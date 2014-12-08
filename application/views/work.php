@@ -1,4 +1,4 @@
-<script type="text/javascript">
+<!DOCTYPE html><script type="text/javascript">
     var old = 1;
 function switchTab(id)
     {
@@ -39,10 +39,10 @@ function switchTab(id)
         </div>
         <div id="chats">
           <div>
-            <textarea rows="4" cols="50" id="chat" disabled></textarea>
+            <textarea rows="4" cols="50" id="chatBox" disabled></textarea>
           </div>  
           <div>
-            <input id="msg" type="text"/>
+            <input id="talk" type="text"/>
             <input id="send" type="button" value="Send"/>
           </div>
         </div>
@@ -98,10 +98,10 @@ function switchTab(id)
     var text = "Hey!";
 
     $(document).ready(function(){
-      var chat = $('#chat')[0];
+      var cb = $('#chatBox')[0];
       var send = $('#send')[0];
-      var msg = $('#msg')[0];
-
+      var talk = $('#talk')[0];
+      cb.value = "Hey!";
 
 
        
@@ -126,9 +126,10 @@ function switchTab(id)
           channel: 'koding_hack',
           message: function(m){
             console.log(m);
-            chat.value = chat.value + "\n";
-            chat.value += text;
-            chat.scrollTop = chat.scrollHeight;
+            cb.value = cb.value + "\n";
+            cb.value += text;
+           
+            cb.scrollTop = cb.scrollHeight;
           },
           connect : publish,
           error: function(error) {
@@ -136,7 +137,7 @@ function switchTab(id)
           }
         });
         
-        var publish = function () {
+        var publish = function (text) {
           GOAT.publish({
           channel: 'koding_hack',
           message: {"text": text}
@@ -144,20 +145,22 @@ function switchTab(id)
         };
       
 
-      
-      
+
       send.addEventListener("click", function(){
-        text = msg.value;
-        publish();
+        text = talk.value;
+        publish(text);
       });
       document.addEventListener("keydown", function(e){
         if (e.keyCode == 13)
         {
-          text = msg.value;
-          publish();
+          text = talk.value;
+          publish(text);
         }
       });
+
     });
+
+    
     
     
     </script> 
