@@ -16,6 +16,7 @@
 	      	<li role="presentation" class="active"><a href="#">zippityzoop.js</a></li>
           	<li role="presentation"><a href="#">site.js</a></li>
           	<li role="presentation"><a href="#">login.java</a></li>
+            <li rold="presentation"><a href="#">extra.tcl</a></li>
           </ul>
           <br /> 
           <div class="row placeholders">
@@ -23,7 +24,6 @@
 
             </canvas>
             
-            canvas here
           </div>
         </div>
         <div id="chats">
