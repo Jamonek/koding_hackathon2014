@@ -44,6 +44,7 @@
 </div>
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="https://cdn.pubnub.com/pubnub.min.js"></script>
+<script src="https://cdn.pubnub.com/pubnub-crypto.min.js"></script>
 <script type="text/javascript">
   //tab buttons
   var code = document.getElementById('code');
@@ -94,13 +95,24 @@
 
 
        
+        var auth_key = PUBNUB.uuid();
         var GOAT = PUBNUB.init({
           publish_key: 'pub-c-60f05496-69e7-4b5f-9615-b12ac200492b',
           subscribe_key: 'sub-c-c192f52c-7dd5-11e4-9173-02ee2ddab7fe'
+          secret_key: 'sec-c-M2Y0ZDhjYmUtODNkYy00ZjBlLWFkYTktMzZlNjk4NzBlOGQ5'
+          auth_key: auth_key
         });
+
+        GOAT.grant({
+          channel: 'koding_hack',
+          auth_key: auth_key,
+          read: true,
+          write: true,
+          ttl: 60
+        })
         
         GOAT.subscribe({
-          channel: 'demo_tutorial',
+          channel: 'koding_hack',
           message: function(m){
             console.log(m);
             chat.value = chat.value + "\n";
@@ -112,7 +124,7 @@
         
         var publish = function () {
           GOAT.publish({
-          channel: 'demo_tutorial',
+          channel: 'koding_hack',
           message: {"text": text}
           });
         }
