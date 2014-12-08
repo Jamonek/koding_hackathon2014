@@ -32,7 +32,7 @@ function switchTab(id)
           <br /> 
           <div class="row placeholders">
             <canvas id="canGoat" width="200" height="100" style="border:1px solid #000000;">
-
+                text
             </canvas>
             
           </div>
