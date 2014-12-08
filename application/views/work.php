@@ -11,12 +11,12 @@
         <div class="well">
           <h1 class="page-header">My Work</h1>
           
-          <ul class="nav nav-pills">
+          <ul class="nav nav-tabs nav-justified">
 	      	<li role="presentation" class="active"><a href="#">zippityzoop.js</a></li>
           	<li role="presentation"><a href="#">site.js</a></li>
           	<li role="presentation"><a href="#">login.java</a></li>
           </ul>
-          
+          <br /> 
           <div class="row placeholders">
             <div class="col-xs-6 col-sm-3 placeholder">
               <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="Generic placeholder thumbnail">
