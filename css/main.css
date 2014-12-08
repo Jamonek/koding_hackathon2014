@@ -9,6 +9,7 @@ a:visted{
 }
 html,body {
         height: 100%;
+        padding-top: 70px;
         background-image: url("../img/bg.png");
         color: black;
       }
