@@ -55,11 +55,14 @@
   var ms = document.getElementById('msgs');
   var lo = document.getElementById('logs');
 
-  ch.style.display = ms.style.display = lo.style.display = "none";
+  ch.style.display = "none";
+  ms.style.display = "none";
+  lo.style.display = "none";
 
   var clear = function(btn){
+
     code.className = chat.className = msg.className = log.className = "";
-    co.style.display = ch.style.display = ms.style.display = lo.style.display = "none";
+    //co.style.display = ch.style.display = ms.style.display = lo.style.display = "none";
     btn.className = "active";
   };
   code.addEventListener("click", function(e){
