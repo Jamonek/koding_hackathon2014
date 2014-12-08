@@ -9,7 +9,10 @@
     <!-- Bootstrap -->
     <link href="<?=base_url();?>css/bootstrap.min.css" rel="stylesheet">
     <link href="<?=base_url();?>css/main.css" rel="stylesheet">
-	    
+	<?
+	if($active_nav == 'my_work')
+		echo '<link href="dashboard.css" rel="stylesheet">';
+	?>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
