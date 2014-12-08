@@ -101,7 +101,7 @@
         var auth_key = PUBNUB.uuid();
         var GOAT = PUBNUB.init({
           publish_key: 'pub-c-60f05496-69e7-4b5f-9615-b12ac200492b',
-          subscribe_key: 'sub-c-c192f52c-7dd5-11e4-9173-02ee2ddab7fe'
+          subscribe_key: 'sub-c-c192f52c-7dd5-11e4-9173-02ee2ddab7fe',
           secret_key: 'sec-c-M2Y0ZDhjYmUtODNkYy00ZjBlLWFkYTktMzZlNjk4NzBlOGQ5',
           auth_key: auth_key
         });
