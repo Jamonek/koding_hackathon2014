@@ -1,8 +1,9 @@
+
 <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
-            <li class="active"><a href="">Code</a></li>
-            <li><a href="">Chat</a></li>
+            <li id="code" class="active"><a href="">Code</a></li>
+            <li id="chat"><a href="">Chat</a></li>
             <li><a href="">Messages</a></li>
             <li><a href="">Log</a></li>
           </ul>
@@ -18,7 +19,9 @@
           </ul>
           <br /> 
           <div class="row placeholders">
-            
+            <canvas id="canGoat" width="200" height="100" style="border:1px solid #000000;">
+
+            </canvas>
             
             canvas here
           </div>
@@ -26,3 +29,25 @@
 
         </div>
 </div>
+<script type="text/javascript">
+  var code = document.getElementById('code');
+  var chat = document.getElementById('chat');
+  var msg = document.getElementById('msg');
+  var log = document.getElementById('log');
+  var clear = function(btn){
+    code.className = chat.className = msg.className = log.className = "";
+    btn.className = "active";
+  };
+  code.addEventListener("click", function(e){
+    clear(code);
+  });
+  chat.addEventListener("click", function(e){
+    clear(chat);
+  });
+  msg.addEventListener("click", function(e){
+    clear(msg);
+  });
+  log.addEventListener("click", function(e){
+    clear(log);
+  });
+</script>
