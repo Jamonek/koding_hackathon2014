@@ -9,7 +9,7 @@
           </ul>
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-        <div class="well">
+        <div id="co" class="well">
           <h1 class="page-header">My Work</h1>
           
           <ul class="nav nav-tabs nav-justified">
@@ -26,7 +26,7 @@
             canvas here
           </div>
         </div>
-        <div class="chats">
+        <div id="chats">
           <div>
             <textarea rows="4" cols="50" id="chat"></textarea>
           </div>  
@@ -35,10 +35,10 @@
             <input id="send" type="button" value="Send"/>
           </div>
         </div>
-        <div class="msgs">
+        <div id="msgs">
           Messages
         </div>
-        <div class="logs">
+        <div id="logs">
           Log
         </div>
 </div>
@@ -62,7 +62,7 @@
   var clear = function(btn){
 
     code.className = chat.className = msg.className = log.className = "";
-    //co.style.display = ch.style.display = ms.style.display = lo.style.display = "none";
+    co.style.display = ch.style.display = ms.style.display = lo.style.display = "none";
     btn.className = "active";
   };
   code.addEventListener("click", function(e){
