@@ -95,8 +95,8 @@
 
        
         var GOAT = PUBNUB.init({
-          publish_key: 'demo',
-          subscribe_key: 'demo'
+          publish_key: 'pub-c-60f05496-69e7-4b5f-9615-b12ac200492b',
+          subscribe_key: 'sub-c-c192f52c-7dd5-11e4-9173-02ee2ddab7fe'
         });
         
         GOAT.subscribe({
