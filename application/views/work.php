@@ -28,7 +28,7 @@
         </div>
         <div id="chats">
           <div>
-            <textarea rows="4" cols="50" id="chat"></textarea>
+            <textarea rows="4" cols="50" id="chat" disabled></textarea>
           </div>  
           <div>
             <input id="msg" type="text"/>
@@ -42,6 +42,8 @@
           Log
         </div>
 </div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://cdn.pubnub.com/pubnub.min.js"></script>
 <script type="text/javascript">
   //tab buttons
   var code = document.getElementById('code');
@@ -80,3 +82,56 @@
     clear(log, lo);
   });
 </script>
+<script charset="utf-8" type="text/javascript">
+    var text = "Hey!";
+    
+
+    $(document).ready(function(){
+      var chat = $('#chat')[0];
+      var send = $('#send')[0];
+      var msg = $('#msg')[0];
+
+
+
+       
+        var GOAT = PUBNUB.init({
+          publish_key: 'demo',
+          subscribe_key: 'demo'
+        });
+        
+        GOAT.subscribe({
+          channel: 'demo_tutorial',
+          message: function(m){
+            console.log(m);
+            chat.value = chat.value + "\n";
+            chat.value += text;
+            chat.scrollTop = chat.scrollHeight;
+          },
+          connect : publish
+        });
+        
+        var publish = function () {
+          GOAT.publish({
+          channel: 'demo_tutorial',
+          message: {"text": text}
+          });
+        }
+      
+
+      
+      
+      send.addEventListener("click", function(){
+        text = msg.value;
+        publish();
+      });
+      document.addEventListener("keydown", function(e){
+        if (e.keyCode == 13)
+        {
+          text = msg.value;
+          publish();
+        }
+      });
+    });
+    
+    
+    </script> 
