@@ -65,7 +65,7 @@
     co.style.display = ch.style.display = ms.style.display = lo.style.display = "none";
     btn.className = "active";
     div.style.display = "inherit";
-    }
+    
   };
   code.addEventListener("click", function(e){
     clear(code, co);
