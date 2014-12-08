@@ -32,7 +32,7 @@ class Login extends CI_Controller {
 	     $data['site_sub_page'] = 'Login';
 	     $data['active_nav'] = 'login';
 	     $this->load->view('includes/header', $data);
-	     $this->load->view('login', $register);
+	     $this->load->view('login', $login);
 	     $this->load->view('includes/footer');
       }
     }
