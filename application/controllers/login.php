@@ -29,10 +29,10 @@ class Login extends CI_Controller {
 	      exit;
       } else {
 	      // display form with errors
-	     $data['site_sub_page'] = 'Sign Up';
-	     $data['active_nav'] = 'signup';
+	     $data['site_sub_page'] = 'Login';
+	     $data['active_nav'] = 'login';
 	     $this->load->view('includes/header', $data);
-	     $this->load->view('signup', $register);
+	     $this->load->view('login', $register);
 	     $this->load->view('includes/footer');
       }
     }
