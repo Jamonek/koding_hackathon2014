@@ -64,7 +64,17 @@
     code.className = chat.className = msg.className = log.className = "";
     co.style.display = ch.style.display = ms.style.display = lo.style.display = "none";
     btn.className = "active";
-    alert(btn.id);
+    switch(btn.id){
+      case 'code':
+        co.style.display = "initial";
+        break;
+      case 'chat':
+        break;
+      case 'msg':
+        break;
+      case 'log':
+        break;
+    }
   };
   code.addEventListener("click", function(e){
     clear(code);
