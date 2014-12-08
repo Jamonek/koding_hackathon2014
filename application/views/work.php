@@ -26,17 +26,40 @@
             canvas here
           </div>
         </div>
-
+        <div class="chats">
+          <div>
+            <textarea rows="4" cols="50" id="chat"></textarea>
+          </div>  
+          <div>
+            <input id="msg" type="text"/>
+            <input id="send" type="button" value="Send"/>
+          </div>
+        </div>
+        <div class="msgs">
+          Messages
+        </div>
+        <div class="logs">
+          Log
         </div>
 </div>
 <script type="text/javascript">
+  //tab buttons
   var code = document.getElementById('code');
   var chat = document.getElementById('chat');
   var msg = document.getElementById('msg');
   var log = document.getElementById('log');
+
+  //divs
+  var co = document.getElementById('well');
+  var ch = document.getElementById('chats');
+  var ms = document.getElementById('msgs');
+  var lo = document.getElementById('logs');
+
   var clear = function(btn){
     code.className = chat.className = msg.className = log.className = "";
+    co.style.display = ch.style.display = ms.style.display = lo.style.display = "none";
     btn.className = "active";
+    alert(btn.id);
   };
   code.addEventListener("click", function(e){
     clear(code);
