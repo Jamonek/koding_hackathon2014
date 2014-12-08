@@ -11,7 +11,6 @@ html,body {
         height: 100%;
         background-image: url("../img/bg.png");
         color: black;
-        padding-right: 15px;
       }
       #wrap {
         min-height: 100%;
