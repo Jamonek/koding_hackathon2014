@@ -45,6 +45,7 @@
 				{
 				?>
 					<li <?=($active_nav == 'my_work') ? "class='active'":'';?>><a href="<?=base_url('work');?>">My Work</a></li>
+					<li <?=($active_nav == 'logout') ? "class='active'":'';?>><a href="<?=base_url('logout');?>">Logout</a></li>
 				<?	
 				} else {
 				?>
