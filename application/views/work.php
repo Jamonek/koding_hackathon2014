@@ -50,7 +50,7 @@
   var log = document.getElementById('log');
 
   //divs
-  var co = document.getElementById('well');
+  var co = document.getElementById('co');
   var ch = document.getElementById('chats');
   var ms = document.getElementById('msgs');
   var lo = document.getElementById('logs');
