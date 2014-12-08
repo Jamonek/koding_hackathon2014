@@ -1,5 +1,10 @@
 <div class="well">
   <!-- Contact Form -->
+  <?
+    if(isset($status)){
+      echo '<strong>'.$message.'</strong><br /><br />';
+    }
+  ?>
   <form action="<?=base_url();?>login/push" method="POST" role="form"> <!--Dont know what acton to use -->
     <div class="form-group">
       <label for="email">Email</label>
