@@ -1,4 +1,13 @@
-
+<script type="text/javascript">
+    var old;
+function switchTab(id)
+    {
+        old = 1;
+        document.getElementById(id).toggle('active');
+        document.getElementById(old).toggle('active');
+        old = id;
+    }
+</script>
 <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
@@ -13,13 +22,13 @@
           <h1 class="page-header">My Work</h1>
           
           <ul class="nav nav-tabs nav-justified">
-	      	<li role="presentation" class="active"><a href="#">zippityzoop.js</a></li>
-          	<li role="presentation"><a href="#">site.js</a></li>
-          	<li role="presentation"><a href="#">login.java</a></li>
-            <li role="presentation"><a href="#">extra.tcl</a></li>
-            <li role="presentation"><a href="#">input.go</a></li>
-            <li role="presentation"><a href="#">memcached.ruby</a></li>
-            <li role="presentation"><a href="#">twister.py</a></li>
+	      	<li role="presentation" class="active"><a onClick='switchTab(this.id)' href="#" id="0">zippityzoop.js</a></li>
+          	<li role="presentation"><a onClick='switchTab(this.id)' href="#" id="1">site.js</a></li>
+          	<li role="presentation"><a onClick='switchTab(this.id)' href="#" id="2">login.java</a></li>
+            <li role="presentation"><a onClick='switchTab(this.id)' href="#" id="3">extra.tcl</a></li>
+            <li role="presentation"><a onClick='switchTab(this.id)' href="#" id="4">input.go</a></li>
+            <li role="presentation"><a onClick='switchTab(this.id)' href="#" id="5">memcached.ruby</a></li>
+            <li role="presentation"><a onClick='switchTab(this.id)' href="#" id="6">twister.py</a></li>
           </ul>
           <br /> 
           <div class="row placeholders">
