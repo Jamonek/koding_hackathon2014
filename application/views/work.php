@@ -42,7 +42,7 @@ function switchTab(id)
             <textarea rows="4" cols="50" id="chatBox" disabled></textarea>
           </div>  
           <div>
-            <input id="talk" type="text"/>
+            <input id="talk" type="text" placeholder="Say hi!"/>
             <input id="send" type="button" value="Send"/>
           </div>
         </div>
