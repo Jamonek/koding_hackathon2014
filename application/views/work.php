@@ -64,6 +64,7 @@
     code.className = chat.className = msg.className = log.className = "";
     co.style.display = ch.style.display = ms.style.display = lo.style.display = "none";
     btn.className = "active";
+    alert(btn.id);
   };
   code.addEventListener("click", function(e){
     clear(code);
