@@ -1,10 +1,9 @@
 <script type="text/javascript">
-    var old;
+    var old = 1;
 function switchTab(id)
     {
-        old = 1;
-        document.getElementById(id).toggle('active');
-        document.getElementById(old).toggle('active');
+        document.getElementById(id).classList.toggle('active');
+        document.getElementById(old).classList.toggle('active');
         old = id;
     }
 </script>
