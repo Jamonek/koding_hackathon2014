@@ -2,10 +2,10 @@
 <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
-            <li id="code" class="active"><a href="">Code</a></li>
-            <li id="chat"><a href="">Chat</a></li>
-            <li><a href="">Messages</a></li>
-            <li><a href="">Log</a></li>
+            <li id="code" class="active"><a href=#"">Code</a></li>
+            <li id="chat"><a href="#">Chat</a></li>
+            <li id="msg"><a href="#">Messages</a></li>
+            <li id="log"><a href="#">Log</a></li>
           </ul>
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
