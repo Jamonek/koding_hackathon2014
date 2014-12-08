@@ -66,7 +66,7 @@
     btn.className = "active";
     switch(btn.id){
       case 'code':
-        co.style.display = "initial";
+        co.style.display = "inline";
         break;
       case 'chat':
         break;
