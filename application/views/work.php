@@ -119,7 +119,8 @@ function switchTab(id)
           auth_key: auth_key,
           read: true,
           write: true,
-          ttl: 60
+          ttl: 60,
+          callback: function(m){console.log(m)}
         });
         
         GOAT.subscribe({
@@ -130,7 +131,10 @@ function switchTab(id)
             chat.value += text;
             chat.scrollTop = chat.scrollHeight;
           },
-          connect : publish
+          connect : publish,
+          error: function(error) {
+            console.log(error);
+          }
         });
         
         var publish = function () {
