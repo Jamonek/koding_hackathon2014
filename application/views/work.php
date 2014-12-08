@@ -88,7 +88,6 @@
 </script>
 <script charset="utf-8" type="text/javascript">
     var text = "Hey!";
-    
 
     $(document).ready(function(){
       var chat = $('#chat')[0];
@@ -112,7 +111,7 @@
           read: true,
           write: true,
           ttl: 60
-        })
+        });
         
         GOAT.subscribe({
           channel: 'koding_hack',
@@ -130,7 +129,7 @@
           channel: 'koding_hack',
           message: {"text": text}
           });
-        }
+        };
       
 
       
