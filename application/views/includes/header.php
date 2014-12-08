@@ -37,7 +37,7 @@
 					<li <?=($active_nav == 'about') ? "class='active'":'';?>><a href="<?=base_url('about');?>">About</a></li>
 					<li <?=($active_nav == 'contact') ? "class='active'":'';?>><a href="<?=base_url('contact');?>">Contact Us</a></li>
 				</ul>
-				<ul class="nav navbar-nav navbar-right" style="padding-right: 3px;">
+				<ul class="nav navbar-nav navbar-right" style="padding-right: 6px;">
 				<?php
 				// user logged in? display my work
 				// user logged out? display login/sign up
